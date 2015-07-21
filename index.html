@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>SoundVisualizer</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<!--<script>-->
+		<!--$(window).resize(function(){-->
+			<!--var w = $(window).width();-->
+			<!--var x = 500;-->
+			<!--if (w <= x) {-->
+				<!--$('#sample').css({-->
+					<!--color: 'red'-->
+				<!--});-->
+			<!--} else {-->
+				<!--$('#sample').css({-->
+					<!--color: 'black'-->
+				<!--});-->
+			<!--}-->
+		<!--});-->
+		<!--</script>-->
+    </head>
+    <body>
+        <!-- <h1 id="title">Start a room</h1> -->
+        <style>
+            /*.videoContainer {*/
+                /*position: relative;*/
+                /*width: 640px;*/
+                /*height:480px;*/
+                /*float:left;*/
+            /*}*/
+            /*.videoContainer video {*/
+                /*position: absolute;*/
+                /*width: 100%;*/
+                /*height: 100%;*/
+            /*}*/
+            /*.volume_bar {*/
+                /*position: absolute;*/
+                /*width: 5px;*/
+                /*height: 2px;*/
+                /*right: 0px;*/
+                /*bottom: 0px;*/
+                /*background-color: #12acef;*/
+            /*}*/
+        </style>
+
+        <div class="VideoContainer" width="360" style="float:left">
+            <div  class="volume_bar"><canvas id="localVolume" width="360" height="360"></canvas></div>
+        </div>
+        <div id="remotes"></div>
+
+        <script src="src/jquery-1.11.3.min.js"></script>
+        <script src="src/socket.io.js"></script>
+        <script src="src/simplewebrtc.bundle.js"></script>
+        <script src="src/main.js"></script>
+    </body>
+</html>

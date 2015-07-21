@@ -1,0 +1,14 @@
+body {
+	background-color: rgb(21,42,61);
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #dcdcdc;
+}
+td {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+}
+
+th {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+}
